@@ -12,6 +12,7 @@ getSymbols("ADS.DE", from = '2017-01-01',
 ADS<-na.omit(data.frame(ADS.DE[,4])) 
 
 
+<<<<<<< HEAD
 for(i in 25:dim(ADS)[1])
 {ADS[i,2]<-mean(ADS[(i-24):(i),1])}
 
@@ -24,9 +25,6 @@ for(i in 200:dim(ADS)[1])
 names(ADS)<-c("Kurs", "GD25", "GD50", "GD200")
 
 ADS<-na.omit(ADS)
-
-matplot(ADS)
-
 
 n<-dim(ADS)[1]
 ADS$Empfehlung30_200<-""
